@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="container">
+        <h1>AI Integration Example</h1>
+        <textarea id="inputText" placeholder="Enter text here..."></textarea>
+        <button id="analyzeButton">Analyze</button>
+        <div id="result"></div>
+    </div>
+
+    <div id="quiz-setup" class="active">
+        <h2>AI Quiz Setup</h2>
+        <div id="difficulty-buttons">
+            <button id="easyButton" data-difficulty="easy">Easy</button>
+            <button id="mediumButton" data-difficulty="medium">Medium</button>
+            <button id="hardButton" data-difficulty="hard">Hard</button>
+        </div>
+        <div id="quiz-length-buttons" class="hidden">
+            <button id="shortQuizButton" data-length="5">Short (5 Questions)</button>
+            <button id="normalQuizButton" data-length="10">Normal (10 Questions)</button>
+            <button id="longQuizButton" data-length="25">Long (25 Questions)</button>
+        </div>
+    </div>
+
+    <div id="quiz-container" class="hidden">
+        <h2>AI Quiz App</h2>
+        <p id="question">Loading question...</p>
+        <div id="options">
+            <button class="option" data-index="0"></button>
+            <button class="option" data-index="1"></button>
+            <button class="option" data-index="2"></button>
+            <button class="option" data-index="3"></button>
+        </div>
+        <div id="quiz-result"></div>
+        <button id="nextQuestionButton" class="hidden">Next Question</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
